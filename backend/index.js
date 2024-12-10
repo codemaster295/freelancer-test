@@ -1,5 +1,5 @@
 const fastify = require('fastify')({ logger: true });
-const userRoutes = require('./routes/user.routes'); // Adjust the path as necessary
+const userRoutes = require('./routes/user.routes');
 const initializeDatabase = require('./utils/db-init');
 
 fastify.register(userRoutes,{ prefix: '/api' });
